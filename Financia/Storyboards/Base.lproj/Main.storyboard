@@ -889,17 +889,6 @@ Label prints "Surplus Cast!" IF( sum of expenses &lt; Sum of Incomes) Then it's 
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="n40-10-Bfi">
-                                <rect key="frame" x="26" y="644" width="368" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="A"/>
-                                    <segment title="B"/>
-                                    <segment title="C"/>
-                                    <segment title="D"/>
-                                    <segment title="E"/>
-                                </segments>
-                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mr.Iaconetti's Time Preferences:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Op3-2L-yAm">
                                 <rect key="frame" x="61" y="342" width="299" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -921,11 +910,26 @@ Label prints "Surplus Cast!" IF( sum of expenses &lt; Sum of Incomes) Then it's 
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="n40-10-Bfi">
+                                <rect key="frame" x="30" y="659" width="368" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="A"/>
+                                    <segment title="B"/>
+                                    <segment title="C"/>
+                                    <segment title="D"/>
+                                    <segment title="E"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CjB-gT-w7f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="VfG-15-rss"/>
+                    <connections>
+                        <outlet property="lbTimePrefTitle" destination="ROu-J5-AIl" id="aBp-ZF-Fld"/>
+                        <outlet property="sgTime" destination="n40-10-Bfi" id="PdK-dy-xkm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N2v-Bq-RIT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="dDH-cC-Vtd" userLabel="Exit" sceneMemberID="exit"/>
@@ -937,7 +941,7 @@ Label prints "Surplus Cast!" IF( sum of expenses &lt; Sum of Incomes) Then it's 
         <segue reference="xI3-sP-lFW"/>
         <segue reference="sag-gN-rs5"/>
         <segue reference="jOe-dd-Vsm"/>
-        <segue reference="JMc-lt-oNb"/>
+        <segue reference="njy-h4-9qm"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1Backg.jpg" width="1080" height="1696"/>
