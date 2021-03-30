@@ -2,10 +2,11 @@
 //  ViewController.swift
 //  Financia
 //
-//  Created by Sudikshya on 2021-03-04.
+//  Created by Gagandeep Ghotra on 2021-03-04.
 //
 
 import UIKit
+//import Auth0
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,29 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
     }
+    
+    /*Auth0
+        .webAuth()
+        .scope("openid profile")
+        .audience("https://dev-y8kzi2o4.us.auth0.com/userinfo")
+        .start { result in
+            switch result {
+            case .failure(let error):
+                // Handle the error
+                print("Error: \(error)")
+            case .success(let credentials):
+                // Do something with credentials e.g.: save them.
+                // Auth0 will automatically dismiss the login page
+                print("Credentials: \(credentials)")
+            }
+    }
+    
+    Auth0
+        .webAuth()
+        .clearSession(federated: false) { result in
+            if result {
+                // Session cleared
+            }
+        }}*/
 
 }
-

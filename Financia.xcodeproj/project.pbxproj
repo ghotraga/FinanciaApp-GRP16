@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -80,6 +80,15 @@
 		1DF1609325F1B10100407401 /* adv1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF1609125F1B10000407401 /* adv1.png */; };
 		1DF1609425F1B10100407401 /* adv2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF1609225F1B10100407401 /* adv2.png */; };
 		1DF1609725F1B19400407401 /* adv3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF1609625F1B19400407401 /* adv3.png */; };
+		C7D0661D26135A47002BAFF2 /* WordBank.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D0661C26135A47002BAFF2 /* WordBank.png */; };
+		C7D0662026135FB7002BAFF2 /* SiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0661F26135FB7002BAFF2 /* SiteCell.swift */; };
+		C7D0662326136004002BAFF2 /* WordBankWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0662226136004002BAFF2 /* WordBankWords.swift */; };
+		C7D0662926136545002BAFF2 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7D0662826136545002BAFF2 /* Auth0.plist */; };
+		C7D0662B2613671A002BAFF2 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D066272613634A002BAFF2 /* libsqlite3.0.tbd */; };
+		C7D0662C2613671A002BAFF2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D066262613634A002BAFF2 /* libsqlite3.tbd */; };
+		C7D0663326136856002BAFF2 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = C7D0663226136856002BAFF2 /* Auth0 */; };
+		C7D0663826136DED002BAFF2 /* Financia-GKSH.db in Resources */ = {isa = PBXBuildFile; fileRef = C7D0663726136DED002BAFF2 /* Financia-GKSH.db */; };
+		C7D0663D2613714A002BAFF2 /* WordBankTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0663C2613714A002BAFF2 /* WordBankTableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -158,6 +167,14 @@
 		1DF1609125F1B10000407401 /* adv1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adv1.png; sourceTree = "<group>"; };
 		1DF1609225F1B10100407401 /* adv2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adv2.png; sourceTree = "<group>"; };
 		1DF1609625F1B19400407401 /* adv3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adv3.png; sourceTree = "<group>"; };
+		C7D0661C26135A47002BAFF2 /* WordBank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WordBank.png; sourceTree = "<group>"; };
+		C7D0661F26135FB7002BAFF2 /* SiteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteCell.swift; sourceTree = "<group>"; };
+		C7D0662226136004002BAFF2 /* WordBankWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBankWords.swift; sourceTree = "<group>"; };
+		C7D066262613634A002BAFF2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C7D066272613634A002BAFF2 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		C7D0662826136545002BAFF2 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		C7D0663726136DED002BAFF2 /* Financia-GKSH.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Financia-GKSH.db"; sourceTree = "<group>"; };
+		C7D0663C2613714A002BAFF2 /* WordBankTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBankTableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +182,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D0663326136856002BAFF2 /* Auth0 in Frameworks */,
+				C7D0662C2613671A002BAFF2 /* libsqlite3.tbd in Frameworks */,
+				C7D0662B2613671A002BAFF2 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +196,7 @@
 			children = (
 				1D06051725F149BE00BD37F9 /* Financia */,
 				1D06051625F149BE00BD37F9 /* Products */,
+				C7D066252613634A002BAFF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,11 +211,13 @@
 		1D06051725F149BE00BD37F9 /* Financia */ = {
 			isa = PBXGroup;
 			children = (
+				C7D0663626136D9E002BAFF2 /* Database */,
 				1DF1602925F14A8F00407401 /* View Controllers */,
 				1DF1602825F14A6A00407401 /* Storyboards */,
 				1DF1602725F14A6400407401 /* Classes */,
 				1DF1602525F14A4C00407401 /* Images */,
 				1D06052625F149C000BD37F9 /* Info.plist */,
+				C7D0662826136545002BAFF2 /* Auth0.plist */,
 			);
 			path = Financia;
 			sourceTree = "<group>";
@@ -202,6 +225,7 @@
 		1DF1602525F14A4C00407401 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C7D0661C26135A47002BAFF2 /* WordBank.png */,
 				1DC7534325F46D14000357FF /* button_visiting-a-bank.png */,
 				1DC7534025F45B9E000357FF /* logoless.png */,
 				1DC7533D25F45603000357FF /* button_skip-login-signup.png */,
@@ -269,8 +293,10 @@
 		1DF1602725F14A6400407401 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C7D0661F26135FB7002BAFF2 /* SiteCell.swift */,
 				1D06051825F149BE00BD37F9 /* AppDelegate.swift */,
 				1D06051A25F149BE00BD37F9 /* SceneDelegate.swift */,
+				C7D0662226136004002BAFF2 /* WordBankWords.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -296,8 +322,26 @@
 				1DF1606A25F1946400407401 /* CalculatorController.swift */,
 				1DF1606D25F1948000407401 /* AdvisorChatController.swift */,
 				1D3B154525F43E9D00596B4F /* ToolsController.swift */,
+				C7D0663C2613714A002BAFF2 /* WordBankTableController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C7D066252613634A002BAFF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7D066272613634A002BAFF2 /* libsqlite3.0.tbd */,
+				C7D066262613634A002BAFF2 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7D0663626136D9E002BAFF2 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				C7D0663726136DED002BAFF2 /* Financia-GKSH.db */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +360,9 @@
 			dependencies = (
 			);
 			name = Financia;
+			packageProductDependencies = (
+				C7D0663226136856002BAFF2 /* Auth0 */,
+			);
 			productName = Financia;
 			productReference = 1D06051525F149BE00BD37F9 /* Financia.app */;
 			productType = "com.apple.product-type.application";
@@ -343,6 +390,9 @@
 				Base,
 			);
 			mainGroup = 1D06050C25F149BE00BD37F9;
+			packageReferences = (
+				C7D0663126136856002BAFF2 /* XCRemoteSwiftPackageReference "Auth0.swift" */,
+			);
 			productRefGroup = 1D06051625F149BE00BD37F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -376,6 +426,7 @@
 				1D06052225F149C000BD37F9 /* Assets.xcassets in Resources */,
 				1D3B153725F4371D00596B4F /* i3.png in Resources */,
 				1D3B154925F43FD000596B4F /* search.jpg in Resources */,
+				C7D0663826136DED002BAFF2 /* Financia-GKSH.db in Resources */,
 				1D3B155525F4426700596B4F /* button_time-value-of-money-calculator.png in Resources */,
 				1D3B152825F42EEC00596B4F /* b1.png in Resources */,
 				1D3B151F25F42AD600596B4F /* p4.png in Resources */,
@@ -396,6 +447,7 @@
 				1D3B155425F4426700596B4F /* button_affordability-calculator.png in Resources */,
 				1D3B155E25F447F800596B4F /* button_calculate.png in Resources */,
 				1D3B152225F42AD600596B4F /* p3.png in Resources */,
+				C7D0662926136545002BAFF2 /* Auth0.plist in Resources */,
 				1D3B153F25F43D1C00596B4F /* button_user-profile.png in Resources */,
 				1DF1606225F193A400407401 /* menu.jpg in Resources */,
 				1DC7534425F46D14000357FF /* button_visiting-a-bank.png in Resources */,
@@ -417,6 +469,7 @@
 				1D3B154C25F4403F00596B4F /* searchbar.png in Resources */,
 				1DF1609725F1B19400407401 /* adv3.png in Resources */,
 				1DF1605725F18E4700407401 /* 4Backg.jpg in Resources */,
+				C7D0661D26135A47002BAFF2 /* WordBank.png in Resources */,
 				1D3B152025F42AD600596B4F /* p1.png in Resources */,
 				1DF1609325F1B10100407401 /* adv1.png in Resources */,
 			);
@@ -433,12 +486,15 @@
 				1D06051D25F149BE00BD37F9 /* ViewController.swift in Sources */,
 				1DF1606E25F1948000407401 /* AdvisorChatController.swift in Sources */,
 				1DF1606B25F1946400407401 /* CalculatorController.swift in Sources */,
+				C7D0663D2613714A002BAFF2 /* WordBankTableController.swift in Sources */,
 				1D06051925F149BE00BD37F9 /* AppDelegate.swift in Sources */,
 				1D06051B25F149BE00BD37F9 /* SceneDelegate.swift in Sources */,
 				1D3B154625F43E9D00596B4F /* ToolsController.swift in Sources */,
 				1DF1606825F1943600407401 /* MainMenuViewController.swift in Sources */,
 				1DF1606525F1942400407401 /* ChoiceController.swift in Sources */,
 				1DF1602F25F166E600407401 /* SurveyController.swift in Sources */,
+				C7D0662326136004002BAFF2 /* WordBankWords.swift in Sources */,
+				C7D0662026135FB7002BAFF2 /* SiteCell.swift in Sources */,
 				1DF1603925F1679100407401 /* BeginnerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +644,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Financia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,6 +663,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Financia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -639,6 +697,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7D0663126136856002BAFF2 /* XCRemoteSwiftPackageReference "Auth0.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.32.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7D0663226136856002BAFF2 /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7D0663126136856002BAFF2 /* XCRemoteSwiftPackageReference "Auth0.swift" */;
+			productName = Auth0;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1D06050D25F149BE00BD37F9 /* Project object */;
 }
